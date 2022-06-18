@@ -83,7 +83,7 @@ namespace NyxBuilder
                         var dir = Console.ReadLine();
                         System.Diagnostics.ProcessStartInfo proc = new System.Diagnostics.ProcessStartInfo();
                         proc.FileName = @"C:\windows\system32\cmd.exe";
-                        proc.Arguments = $"/c npx electron-packager {dir}  Nyx --platform=mac";
+                        proc.Arguments = $"/c npx electron-packager {dir}  Nyx --platform=mas";
                         System.Diagnostics.Process.Start(proc);
                         Console.WriteLine("");
                         Writer.resetOptions();
@@ -114,7 +114,7 @@ namespace NyxBuilder
                         var dir = Console.ReadLine();
                         System.Diagnostics.ProcessStartInfo proc = new System.Diagnostics.ProcessStartInfo();
                         proc.FileName = @"C:\windows\system32\cmd.exe";
-                        proc.Arguments = $"/c npx electron-packager {dir}  Nyx --platform=mas";
+                        proc.Arguments = $"/c npx electron-packager {dir}  Nyx --platform=linux";
                         System.Diagnostics.Process.Start(proc);
                         Console.WriteLine("");
                         Writer.resetOptions();
