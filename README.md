@@ -6,4 +6,12 @@ This is a simple C# program to automatically build the Nyx Electron program for 
 * Select the source directory (inside the folder, make sure that main.js is in the folder you select)
 * Press enter, it should then build it and output a folder in the app directory
 
-# Platform
+# NyxBuilder supported Platform
+------------------------------------------------------
+| Platform | Supported                               |
+| ------- | -----------------------------------------|
+| Windows | :white_check_mark:                       |
+| Mac   | :x:                                        |
+| Linux   | :x:                                      | 
+| Darwin   | :x:                                     | 
+------------------------------------------------------
