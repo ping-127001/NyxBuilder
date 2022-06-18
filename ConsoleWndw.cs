@@ -79,10 +79,15 @@ namespace NyxBuilder
                     try
                     {
                         Console.Clear();
+                        WindowUtility.centerText("NOTE: Bulding for Mac requires admin");
+                        Console.WriteLine();
                         WindowUtility.centerText("Please select Nyx source directory");
                         var dir = Console.ReadLine();
                         System.Diagnostics.ProcessStartInfo proc = new System.Diagnostics.ProcessStartInfo();
                         proc.FileName = @"C:\windows\system32\cmd.exe";
+                        //Building for Mac requires admin so start console as admin
+                        proc.UseShellExecute = true;
+                        proc.Verb = "runas";
                         proc.Arguments = $"/c npx electron-packager {dir}  Nyx --platform=mas";
                         System.Diagnostics.Process.Start(proc);
                         Console.WriteLine("");
