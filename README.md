@@ -15,3 +15,6 @@ This is a simple C# program to automatically build the Nyx Electron program for 
 | Linux   | :x:                                      | 
 | Darwin   | :x:                                     | 
 ------------------------------------------------------
+
+# Download 
+[Click here](https://github.com/ping-127001/NyxBuilder/releases/tag/v1.0.0)
