@@ -17,4 +17,4 @@ This is a simple C# program to automatically build the Nyx Electron program for 
 ------------------------------------------------------
 
 # Download 
-[v1.0.0 Direct Link]([https://github.com/ping-127001/NyxBuilder/releases/tag/v1.0.0](https://github.com/ping-127001/NyxBuilder/releases/download/v1.0.0/NyxBuilder.exe))
+[v1.0.0 Direct Link]([https://github.com/ping-127001/NyxBuilder/releases/tag/v1.0.0](https://github.com/ping-127001/NyxBuilder/releases/download/v1.0.0/NyxBuilder.exe)
