@@ -51,10 +51,7 @@ namespace NyxBuilder
                         Console.Clear();
                         WindowUtility.centerText("Please select Nyx source directory");
                         var dir = Console.ReadLine();
-                        System.Diagnostics.ProcessStartInfo proc = new System.Diagnostics.ProcessStartInfo();
-                        proc.FileName = @"C:\windows\system32\cmd.exe";
-                        proc.Arguments = $"/c npx electron-packager {dir}  Nyx --platform=win32";
-                        System.Diagnostics.Process.Start(proc);
+                        CommandPromptUtility.buildNyx(dir, "win32");
                         Console.WriteLine("");
                         Writer.resetOptions();
                         Writer.optionsWriter("Menu");
@@ -83,13 +80,7 @@ namespace NyxBuilder
                         Console.WriteLine();
                         WindowUtility.centerText("Please select Nyx source directory");
                         var dir = Console.ReadLine();
-                        System.Diagnostics.ProcessStartInfo proc = new System.Diagnostics.ProcessStartInfo();
-                        proc.FileName = @"C:\windows\system32\cmd.exe";
-                        //Building for Mac requires admin so start console as admin
-                        proc.UseShellExecute = true;
-                        proc.Verb = "runas";
-                        proc.Arguments = $"/c npx electron-packager {dir}  Nyx --platform=mas";
-                        System.Diagnostics.Process.Start(proc);
+                        CommandPromptUtility.buildNyx(dir, "mas");
                         Console.WriteLine("");
                         Writer.resetOptions();
                         Writer.optionsWriter("Menu");
@@ -117,10 +108,7 @@ namespace NyxBuilder
                         Console.Clear();
                         WindowUtility.centerText("Please select Nyx source directory");
                         var dir = Console.ReadLine();
-                        System.Diagnostics.ProcessStartInfo proc = new System.Diagnostics.ProcessStartInfo();
-                        proc.FileName = @"C:\windows\system32\cmd.exe";
-                        proc.Arguments = $"/c npx electron-packager {dir}  Nyx --platform=linux";
-                        System.Diagnostics.Process.Start(proc);
+                        CommandPromptUtility.buildNyx(dir, "Linux");
                         Console.WriteLine("");
                         Writer.resetOptions();
                         Writer.optionsWriter("Menu");
@@ -147,10 +135,7 @@ namespace NyxBuilder
                         Console.Clear();
                         WindowUtility.centerText("Please select Nyx source directory");
                         var dir = Console.ReadLine();
-                        System.Diagnostics.ProcessStartInfo proc = new System.Diagnostics.ProcessStartInfo();
-                        proc.FileName = @"C:\windows\system32\cmd.exe";
-                        proc.Arguments = $"/c npx electron-packager {dir}  Nyx --platform=darwin";
-                        System.Diagnostics.Process.Start(proc);
+                        CommandPromptUtility.buildNyx(dir, "darwin");
                         Console.WriteLine("");
                         Writer.resetOptions();
                         Writer.optionsWriter("Menu");
