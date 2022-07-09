@@ -29,3 +29,6 @@ This is a simple C# program to automatically build the Nyx Electron program for 
 * Click save
 * Click on Windows, Mac, Linux, or Darwin
 * Check NyxBuilder app location for the output folder for the build
+
+# Features
+* Directory saving, once you save your directory the app will always remember it
