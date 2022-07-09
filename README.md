@@ -32,3 +32,6 @@ This is a simple C# program to automatically build the Nyx Electron program for 
 
 # Features
 * Directory saving, once you save your directory the app will always remember it
+
+# Font install
+[Download](https://github.com/ping-127001/NyxBuilder/raw/main/NyxBuilderGUI/Font/badcache.ttf)
