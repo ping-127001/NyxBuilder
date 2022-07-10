@@ -18,8 +18,16 @@ namespace NyxBuilderGUI.GUI
         {
             FontChecker.checkFont();
             winrarChecker.checkIfPackaged();
+            NodeJSChecker.isNodeInstalled();
+            NodeJSChecker.isElectronPackagerInstalled();
             Discord.Start();
             InitializeComponent();
+        }
+
+
+        private void mainFrm_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void exitBtn_Click(object sender, EventArgs e)
@@ -37,11 +45,6 @@ namespace NyxBuilderGUI.GUI
         {
             var settings = new settingsFrm();
             settings.Show();
-        }
-
-        private void mainFrm_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void windowsBtn_Click(object sender, EventArgs e)
