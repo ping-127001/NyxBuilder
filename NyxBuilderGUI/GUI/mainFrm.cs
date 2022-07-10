@@ -18,11 +18,13 @@ namespace NyxBuilderGUI.GUI
         {
             FontChecker.checkFont();
             winrarChecker.checkIfPackaged();
+            Discord.Start();
             InitializeComponent();
         }
 
         private void exitBtn_Click(object sender, EventArgs e)
         {
+            Discord.Close();
             Close();
         }
 
@@ -50,7 +52,8 @@ namespace NyxBuilderGUI.GUI
             }
             else
             {
-                NyxBuilder.buildNyx("win32");
+                BuildNyx.buildNyx("win32");
+                Discord.Update("Built Nyx for Windows");
             }
         }
 
@@ -62,7 +65,8 @@ namespace NyxBuilderGUI.GUI
             }
             else
             {
-                NyxBuilder.buildNyx("mas");
+                BuildNyx.buildNyx("mas");
+                Discord.Update("Built Nyx for Mac");
             }
         }
 
@@ -74,7 +78,8 @@ namespace NyxBuilderGUI.GUI
             }
             else
             {
-                NyxBuilder.buildNyx("linux");
+                BuildNyx.buildNyx("linux");
+                Discord.Update("Built Nyx for Linux");
             }
         }
 
@@ -86,7 +91,8 @@ namespace NyxBuilderGUI.GUI
             }
             else
             {
-                NyxBuilder.buildNyx("darwin");
+                BuildNyx.buildNyx("darwin");
+                Discord.Update("Built Nyx for Darwin");
             }
         }
     }

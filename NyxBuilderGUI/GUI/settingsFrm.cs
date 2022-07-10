@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using NyxBuilderGUI.Handler;
 
 namespace NyxBuilderGUI.GUI
 {
@@ -16,6 +17,7 @@ namespace NyxBuilderGUI.GUI
         public settingsFrm()
         {
             InitializeComponent();
+            Discord.Update("Updating settings");
         }
 
         private void settingsFrm_Load(object sender, EventArgs e)
@@ -33,6 +35,7 @@ namespace NyxBuilderGUI.GUI
 
         private void closeBtn_Click(object sender, EventArgs e)
         {
+            Discord.Update("Idle");
             Close();
         }
 
@@ -46,7 +49,7 @@ namespace NyxBuilderGUI.GUI
             {
                 Directory.Default.nyxSrc = srcTextBox.Text;
                 Directory.Default.Save();
-                MessageBox.Show("Saved directory", "Nyx Builder", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Discord.Update("Updated Nyx source directory");
             }
         }
     }
